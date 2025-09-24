@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<title>Đổi mật khẩu</title>
+	<meta charset="utf-8">
+    <meta name="author" content="Đỗ Duy Cốp. Tel: 0986516375" />
+    <meta http-equiv="refresh" content="3000" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="admin.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="admin.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+</head>
+<body>
+<form id="changeForm" class="card" autocomplete="off" novalidate>
+	<h1>Đổi mật khẩu</h1>
+
+	<label for="oldPwd">Mật khẩu cũ</label>
+	<input class="mat-khau" id="oldPwd" name="oldPwd" type="password" required minlength="6" />
+
+	<label for="newPwd">Mật khẩu mới</label>
+	<input class="mat-khau" id="newPwd" name="newPwd" type="password" required minlength="6" />
+
+	<label for="confirmPwd">Xác nhận mật khẩu mới</label>
+	<input class="mat-khau" id="confirmPwd" name="confirmPwd" type="password" required minlength="6" />
+
+	<div class="row actions">
+		<button type="submit">Cập nhật</button>
+		<button type="button" id="toggle" class="linkbtn">Hiện/ẩn</button>
+	</div>
+
+	<div id="msg" class="hint" aria-live="polite"></div>
+</form>
+</body>
+</html>
